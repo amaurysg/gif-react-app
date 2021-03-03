@@ -3,7 +3,14 @@
 exports[`Test in component GifGridItem.js El render del componente debe estar Ok 1`] = `
 <div
   className="card animate__animated animate__slideInDown"
+  key="Un id"
 >
-  <img />
+  <img
+    alt="Titulo"
+    src="Un url"
+  />
+  <p>
+    Titulo
+  </p>
 </div>
 `;
