@@ -5,6 +5,9 @@ exports[`Test component AddCategory.js Debe renderizar el component OK 1`] = `
   <form
     onSubmit={[Function]}
   >
+    <p>
+       
+    </p>
     <input
       onChange={[Function]}
       placeholder="Search your gifs..."
