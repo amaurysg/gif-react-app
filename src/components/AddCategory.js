@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import swal from 'sweetalert';
+import propTypes from 'prop-types'
+
 
 const AddCategory = ({setCategories}) => {
 
@@ -44,5 +46,7 @@ const AddCategory = ({setCategories}) => {
 AddCategory.propTypes = {
   setCategories: PropTypes.func.isRequired
 }
+
+
 
 export default AddCategory
