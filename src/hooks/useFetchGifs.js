@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import getGifs from '../helpers/getGifs'
 
+
+
 const useFetchGifs = (category) => {
   const [state, setState] = useState({
     data:[], 
@@ -23,5 +25,9 @@ const useFetchGifs = (category) => {
   
   return state //{ data:[], loading:true }
 }
+
+
+
+
 
 export default useFetchGifs

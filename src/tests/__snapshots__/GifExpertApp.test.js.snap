@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test component <GifExpertApp/> Render component Ok 1`] = `
+<div>
+  <h2
+    className="animate__animated animate__slow 5s animate__flash animate__infinite	infinite "
+  >
+    Gif Expert
+  </h2>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <ol />
+</div>
+`;
+
+exports[`Test component <GifExpertApp/> should  1`] = `
+<div>
+  <h2
+    className="animate__animated animate__slow 5s animate__flash animate__infinite	infinite "
+  >
+    Gif Expert
+  </h2>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <ol>
+    <GifGrid
+      category="Dragon Ball"
+      key="Dragon Ball"
+    />
+    <GifGrid
+      category="Naruto"
+      key="Naruto"
+    />
+  </ol>
+</div>
+`;

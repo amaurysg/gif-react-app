@@ -2,40 +2,21 @@ import React from 'react'
 /* import getGifs from '../helpers/getGifs' */
 import useFetchGifs from '../hooks/useFetchGifs'
 import GifGridItem from './GifGridItem'
-import { Ring } from 'react-awesome-spinners'
+/* import { Ring } from 'react-awesome-spinners' */
+import PropTypes from 'prop-types'
+
 
 
 const GifGrid = ({category}) => {
-
-    //Here test to see utils of useEffect
-  /* const [contador, setcontador] = useState(0) */
-
-  /* const [img, setImg] = useState([])
-
-
-  useEffect(() => {
-    getGifs(category)
-    .then(imgs => setImg(imgs))
-  }, [category])
- */
-
- 
-
-
-  /* getGifs() */
 
   //Here Custom Hooks
   //Desestructure object from customs hooks
   const {data:images, loading} = useFetchGifs(category)
 
- 
-  
-
-
   return (
       <>
           <h3>{category}</h3>
-          {loading && <Ring/> }
+          {loading && <p className='animate__animated animate__flash'>Loading...</p> }
 
           <div className="card-grid" >
         
@@ -63,5 +44,10 @@ const GifGrid = ({category}) => {
 }
 /* { ...img }
 key={img.id} */
+
+GifGrid.propTypes = {
+  category: PropTypes.string.isRequired,
+
+}
 
 export default GifGrid

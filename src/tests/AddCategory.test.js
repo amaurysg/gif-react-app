@@ -61,6 +61,7 @@ describe('Test component AddCategory.js', () => {
     //3. setCategories se debe haber llamado
      expect(setCategories).toHaveBeenCalled()
      /* expect(setCategories).toHaveBeenCalledTimes(1) */
+     //Para que un valor se llame como una funcion 
      expect(setCategories).toHaveBeenCalledWith(expect.any(Function))
 
      //4. El valor de la caja de text debe limpiarse 
